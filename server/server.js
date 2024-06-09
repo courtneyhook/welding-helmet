@@ -1,4 +1,5 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const { ApolloServer } = require("@apollo/server");
 const { expressMiddleware } = require("@apollo/server/express4");
 const path = require("path");
@@ -13,6 +14,8 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
+
+app.use(bodyParser.json());
 
 const startApolloServer = async () => {
   await server.start();
