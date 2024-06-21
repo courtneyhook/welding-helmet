@@ -1,5 +1,11 @@
 function AboutMe() {
-  return <h1>About Me</h1>;
+  return (
+    <>
+      <div className="about-me-container">
+        <p className="about-me">This is the section that tells about me.</p>
+      </div>
+    </>
+  );
 }
 
 export default AboutMe;

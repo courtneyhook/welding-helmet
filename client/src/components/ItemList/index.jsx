@@ -10,7 +10,7 @@ const ItemList = ({ helmets }) => {
             <img
               src={`/images/${helmet.image}`}
               alt={`screenshot of ${helmet.name}`}
-              width="200"
+              width="300"
             />
           </Link>
           <h3 className="card-text">{helmet.name}</h3>

@@ -7,12 +7,20 @@ db.once("open", async () => {
     await cleanDB("User", "users");
     await cleanDB("Helmet", "helmets");
 
-    const user = await User.create({
-      firstName: "Courtney",
-      lastName: "Hook",
-      email: "courtneyhook1979@gmail.com",
-      password: "password",
-    });
+    const user = await User.create(
+      {
+        firstName: "Courtney",
+        lastName: "Hook",
+        email: "courtneyhook1979@gmail.com",
+        password: "password",
+      },
+      {
+        firstName: "Colter",
+        lastName: "England",
+        email: "chook@mg.k12.mo.us",
+        password: "password",
+      }
+    );
 
     const helmets = await Helmet.insertMany([
       {

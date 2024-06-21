@@ -9,12 +9,12 @@
 }
 
 .card {
-  background-color: #e6ccb2;
+  background-color: #f5efed;
   padding: 20px;
-  border: solid gray;
+  border: none;
   margin: 10px;
 }
 
 .card-text {
-  background-color: #e6ccb2;
+  background-color: #f5efed;
 }

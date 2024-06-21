@@ -1,3 +1,16 @@
 body {
   background-color: #141414;
 }
+
+.contact-me-container,
+.about-me-container {
+  min-height: 500px;
+}
+
+.contact-me,
+.about-me {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px;
+}
