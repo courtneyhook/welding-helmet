@@ -6,8 +6,8 @@ function Nav() {
 
   return (
     <>
-      <ul>
-        <li>
+      <ul className="nav-bar">
+        <li className="nav-link">
           <NavLink
             to="/"
             className={currentPage === "/" ? "nav-link active" : "nav-link"}
@@ -15,7 +15,7 @@ function Nav() {
             Gallery
           </NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink
             to="about-me"
             className={
@@ -25,7 +25,7 @@ function Nav() {
             About Me
           </NavLink>
         </li>
-        <li>
+        <li className="nav-link">
           <NavLink
             to="contact"
             className={

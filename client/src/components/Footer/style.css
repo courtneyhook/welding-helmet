@@ -1,0 +1,11 @@
+.footer-nav,
+.footer-admin {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-admin {
+  padding-left: 10px;
+  text-decoration: none;
+}

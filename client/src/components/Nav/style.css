@@ -1,0 +1,11 @@
+.nav-link {
+  display: inline;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.nav-bar {
+  text-align: center;
+  font-size: 1.5rem;
