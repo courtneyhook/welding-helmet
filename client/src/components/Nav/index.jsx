@@ -1,5 +1,6 @@
 import { NavLink, useLocation } from "react-router-dom";
 import "./style.css";
+import auth from "../../utils/auth";
 
 function Nav() {
   const currentPage = useLocation().pathname;
@@ -32,9 +33,16 @@ function Nav() {
               currentPage === "/contact" ? "nav-link active" : "nav-link"
             }
           >
-            Contact Me
+            Contact
           </NavLink>
         </li>
+        {auth.loggedIn() ? (
+          <li className="nav-link">
+            <a className="logout-link" href="/" onClick={() => auth.logout()}>
+              Logout
+            </a>
+          </li>
+        ) : null}
       </ul>
     </>
   );

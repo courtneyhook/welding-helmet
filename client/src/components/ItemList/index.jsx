@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import auth from "../../utils/auth";
 import "./style.css";
 
 const ItemList = ({ helmets }) => {
+  const updateItem = (id) => {
+    console.log("updated item", id);
+  };
+
+  const deleteItem = (id) => {
+    console.log("deleteItem", id);
+  };
   return (
     <div className="display">
       {helmets.map((helmet) => (
@@ -16,6 +24,13 @@ const ItemList = ({ helmets }) => {
           <h3 className="card-text">{helmet.name}</h3>
           <p className="card-text">{helmet.description}</p>
           <p className="card-text">${helmet.price}</p>
+          {auth.loggedIn() ? (
+            <button onClick={updateItem}>Update</button>
+          ) : null}
+          <br />
+          {auth.loggedIn() ? (
+            <button onClick={deleteItem}>Delete</button>
+          ) : null}
         </div>
       ))}
     </div>
