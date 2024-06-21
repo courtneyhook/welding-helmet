@@ -1,11 +1,12 @@
 import Nav from "../Nav/index";
+import "./style.css";
 
 const Header = () => {
   return (
-    <>
-      <h1>TITLE OF WEBSITE</h1>
+    <div className="title">
+      <h1 className="main-title">Centerline Fab</h1>
       <Nav />
-    </>
+    </div>
   );
 };
 

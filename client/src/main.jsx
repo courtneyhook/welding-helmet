@@ -8,6 +8,7 @@ import Error from "./pages/Error.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
 import ContactMe from "./pages/ContactMe.jsx";
 import SingleItem from "./pages/SingleItem.jsx";
+import Admin from "./pages/Admin.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "items/:id",
         element: <SingleItem />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
       },
     ],
   },

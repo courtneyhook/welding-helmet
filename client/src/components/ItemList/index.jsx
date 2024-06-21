@@ -13,9 +13,9 @@ const ItemList = ({ helmets }) => {
               width="200"
             />
           </Link>
-          <h3>{helmet.name}</h3>
-          <p>{helmet.description}</p>
-          <p>${helmet.price}</p>
+          <h3 className="card-text">{helmet.name}</h3>
+          <p className="card-text">{helmet.description}</p>
+          <p className="card-text">${helmet.price}</p>
         </div>
       ))}
     </div>

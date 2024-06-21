@@ -21,12 +21,13 @@ type Auth {
 }
 
 type Query {
-    user: User
+    users: [User]
     helmets: [Helmet]
     helmet(_id: ID!): Helmet
 }
 
 type Mutation {
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!): User
     addHelmet(name: String!, description: String!, image: String!, price: Float): Helmet
     login(email: String!, password: String!): Auth
 }

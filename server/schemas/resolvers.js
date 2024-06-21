@@ -3,6 +3,9 @@ const { Helmet, User } = require("../models");
 
 const resolvers = {
   Query: {
+    users: async () => {
+      return User.find();
+    },
     helmet: async (parent, { _id }) => {
       return Helmet.findOne({ _id });
     },
@@ -12,6 +15,9 @@ const resolvers = {
   },
 
   Mutation: {
+    addUser: async (parent, args) => {
+      const user = await User.create(args);
+    },
     addHelmet: async (parent, args) => {
       const helmet = await Helmet.create(args);
 

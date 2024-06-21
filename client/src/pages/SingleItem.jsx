@@ -24,7 +24,7 @@ export const ItemView = () => {
           width="400"
         />
         <p>{item.description}</p>
-        <p>{item.price}</p>
+        <p>${item.price}</p>
       </div>
     </>
   );

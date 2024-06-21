@@ -23,3 +23,15 @@ export const QUERY_SINGLE_HELMET = gql`
     }
   }
 `;
+
+export const QUERY_USERS = gql`
+  query Users {
+    users {
+      _id
+      email
+      firstName
+      lastName
+      password
+    }
+  }
+`;
